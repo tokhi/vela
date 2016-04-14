@@ -78,20 +78,20 @@ module Vela
       end
     end
 
-   # swap key and values
-   def rename_keys(record, cols)
-  	cols.nil? ? record : Hash[record.map { |k, v| [(cols[k] || k).to_sym ,v] }]
-  end
-
-
-  def build_dollar_signs(rcrd)
-    d_signs = ''
-    rcrd.length.times do |i|
-      d_signs += "$#{i+1},"
+    # swap key and values
+    def rename_keys(record, cols)
+      cols.nil? ? record : Hash[record.map { |k, v| [(cols[k] || k).to_sym ,v] }]
     end
-    # remove the last comma
-    d_signs.chomp!(',')
-  end
+
+
+    def build_dollar_signs(rcrd)
+      d_signs = ''
+      rcrd.length.times do |i|
+        d_signs += "$#{i+1},"
+      end
+      # remove the last comma
+      d_signs.chomp!(',')
+    end
 
   end
 
