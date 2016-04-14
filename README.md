@@ -21,7 +21,7 @@ Or install it yourself as:
     $ gem install vela
 
 ## Usage
-to clone data from mysql to postgresql (change the src and destination arguments based on your db settings )
+to clone data from `Mysql` to `Postgresql` (change the src and destination arguments based on your db settings )
 
 ```ruby
 	v = Vela::DB.new
@@ -35,7 +35,7 @@ to clone data from mysql to postgresql (change the src and destination arguments
 ```
 
 
-to clone data from `postgresql` to `mysql` (change the src and destination arguments based on your db settings )
+to clone data from `Postgresql` to `Mysql` (change the src and destination arguments based on your db settings )
 
 ```ruby
 	v = Vela::DB.new
