@@ -29,7 +29,7 @@ to clone data from `Mysql` to `Postgresql` (change the src and destination argum
 	v.dst_connection(user: 'user', password: 'pass', host: '127.0.0.1', database: 'testpdb', adapter: 'postgresql')
 	v.dbsync("src_tbl", "dst_tbl")  # destination table should already been exist
 
-	# if your destination tables' columns are different than the source table:
+	# if your destination tables' columns are different than the source table (e.g; clonse `col1` data to m_col1 column):
 	v.dbsync("src_tbl", "dst_tbl", {"col1" => "m_col1", "col2" => "m_col2"})  # you can add as much as column as you want
 
 ```
@@ -43,7 +43,7 @@ to clone data from `Postgresql` to `Mysql` (change the src and destination argum
 	v.dst_connection(user: 'root', password: 'pass', host: '127.0.0.1', database: 'testdb', adapter: 'mysql')
 	v.dbsync("src_tbl", "dst_tbl")  # destination table should already been exist
 
-	# if your destination tables' columns are different than the source table:
+	# if your destination tables' columns are different than the source table (e.g; clonse `col1` data to m_col1 column):
 	v.dbsync("src_tbl", "dst_tbl", {"col1" => "m_col1", "col2" => "m_col2"})  # you can add as much as column as you want
 
 ```
