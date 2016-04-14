@@ -2,7 +2,7 @@
 
 Vela is a simple light gem which clone a table records from mysql to postgresql and vice versa. This gem is helpful when you want to have the same table records in a different db.
 
-However this gem is also enable to clone the records of a table to another table even if the destination table has a different name and columns name.
+However this gem is also able to clone the records of a table to another table even if the destination table has a different name and columns name.
 
 ## Installation
 
